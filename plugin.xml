@@ -52,23 +52,27 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
+                tools:replace="android:appComponentFactory"
                 android:name="com.jumio.bam.BamActivity"
                 android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
                 android:hardwareAccelerated="true"
                 android:theme="@style/Theme.Bam" />
             <activity
+                tools:replace="android:appComponentFactory"
                 android:name="com.jumio.nv.NetverifyActivity"
                 android:windowSoftInputMode="adjustResize"
                 android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
                 android:hardwareAccelerated="true"
                 android:theme="@style/Theme.Netverify"/>
             <activity
+                tools:replace="android:appComponentFactory"
                 android:name="com.jumio.dv.DocumentVerificationActivity"
                 android:windowSoftInputMode="adjustResize"
                 android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
                 android:hardwareAccelerated="true"
                 android:theme="@style/Theme.DocumentVerification"/>
 			<activity
+                tools:replace="android:appComponentFactory"
                 android:name="com.jumio.auth.AuthenticationActivity"
                 android:windowSoftInputMode="adjustResize"
                 android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
