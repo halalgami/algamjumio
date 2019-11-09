@@ -22,7 +22,7 @@
     </platform>
     
     <platform name="android">
-        <framework src="com.jumio.android:core:3.3.1" />
+        <!-- <framework src="com.jumio.android:core:3.3.1" />
         <framework src="com.jumio.android:bam:3.3.1" />
         <framework src="com.jumio.android:auth:3.3.1" />
         <framework src="com.jumio.android:nv:3.3.1" />
@@ -40,7 +40,7 @@
         <framework src="com.google.android.gms:play-services-vision:18.0.0" />
         <framework src="org.bouncycastle:bcprov-jdk15on:1.61" />
         <framework src="net.sf.scuba:scuba-sc-android:0.0.18" />
-        <framework src="com.facetec:zoom-authentication-hybrid:7.0.14@aar" />
+        <framework src="com.facetec:zoom-authentication-hybrid:7.0.14@aar" /> -->
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -103,5 +103,6 @@
 			-dontwarn javax.annotation.Nullable
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
+        <framework src="src/android/jumio.gradle" custom="true" type="gradleReference" /> 
     </platform>
 </plugin>
