@@ -28,7 +28,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.android.tools.build:gradle:3.3.1'
     }
 }
 
@@ -325,8 +325,8 @@ dependencies {
 	implementation "androidx.cardview:cardview:1.0.0"
 
     //only for nv-barcode-vision
-    implementation ("com.google.android.gms:play-services-vision:18.0.0"){
-		exclude group: 'com.android.support', module:'support-v4'
+    implementation "com.google.android.gms:play-services-vision:18.0.0"//("com.google.android.gms:play-services-vision:18.0.0"){
+		//exclude group: 'com.android.support', module:'support-v4'
 	}
 
 	//only for nv-nfc
