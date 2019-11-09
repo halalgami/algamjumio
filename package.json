@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-jumio-mobilesdk",
+  "name": "cordova-plugin-jumio",
   "version": "3.3.1",
   "description": "Jumio Mobile SDK Plugin for Cordova",
   "cordova": {
-    "id": "cordova-plugin-jumio-mobilesdk",
+    "id": "cordova-plugin-jumio",
     "platforms": [
       "ios",
       "android"
