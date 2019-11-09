@@ -158,35 +158,35 @@ def computeBuildTargetName(debugBuild) {
 }
 
 // Make cdvBuild a task that depends on the debug/arch-sepecific task.
-task cdvBuildDebug
-cdvBuildDebug.dependsOn {
-    return computeBuildTargetName(true)
-}
+// task cdvBuildDebug
+// cdvBuildDebug.dependsOn {
+//     return computeBuildTargetName(true)
+// }
 
-task cdvBuildRelease
-cdvBuildRelease.dependsOn {
-    return computeBuildTargetName(false)
-}
+// task cdvBuildRelease
+// cdvBuildRelease.dependsOn {
+//     return computeBuildTargetName(false)
+// }
 
-task cdvPrintProps {
-    doLast {
-        println('cdvCompileSdkVersion=' + cdvCompileSdkVersion)
-        println('cdvBuildToolsVersion=' + cdvBuildToolsVersion)
-        println('cdvVersionCode=' + cdvVersionCode)
-        println('cdvVersionCodeForceAbiDigit=' + cdvVersionCodeForceAbiDigit)
-        println('cdvMinSdkVersion=' + cdvMinSdkVersion)
-        println('cdvMaxSdkVersion=' + cdvMaxSdkVersion)
-        println('cdvTargetSdkVersion=' + cdvTargetSdkVersion)
-        println('cdvBuildMultipleApks=' + cdvBuildMultipleApks)
-        println('cdvReleaseSigningPropertiesFile=' + cdvReleaseSigningPropertiesFile)
-        println('cdvDebugSigningPropertiesFile=' + cdvDebugSigningPropertiesFile)
-        println('cdvBuildArch=' + cdvBuildArch)
-        println('computedVersionCode=' + android.defaultConfig.versionCode)
-        android.productFlavors.each { flavor ->
-            println('computed' + flavor.name.capitalize() + 'VersionCode=' + flavor.versionCode)
-        }
-    }
-}
+// task cdvPrintProps {
+//     doLast {
+//         println('cdvCompileSdkVersion=' + cdvCompileSdkVersion)
+//         println('cdvBuildToolsVersion=' + cdvBuildToolsVersion)
+//         println('cdvVersionCode=' + cdvVersionCode)
+//         println('cdvVersionCodeForceAbiDigit=' + cdvVersionCodeForceAbiDigit)
+//         println('cdvMinSdkVersion=' + cdvMinSdkVersion)
+//         println('cdvMaxSdkVersion=' + cdvMaxSdkVersion)
+//         println('cdvTargetSdkVersion=' + cdvTargetSdkVersion)
+//         println('cdvBuildMultipleApks=' + cdvBuildMultipleApks)
+//         println('cdvReleaseSigningPropertiesFile=' + cdvReleaseSigningPropertiesFile)
+//         println('cdvDebugSigningPropertiesFile=' + cdvDebugSigningPropertiesFile)
+//         println('cdvBuildArch=' + cdvBuildArch)
+//         println('computedVersionCode=' + android.defaultConfig.versionCode)
+//         android.productFlavors.each { flavor ->
+//             println('computed' + flavor.name.capitalize() + 'VersionCode=' + flavor.versionCode)
+//         }
+//     }
+// }
 
 android {
     defaultConfig {
