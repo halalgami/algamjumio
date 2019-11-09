@@ -51,6 +51,12 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <application 
+                tools:replace="android:appComponentFactory"
+                android:hardwareAccelerated="true" 
+                android:icon="@mipmap/ic_launcher" 
+                android:label="@string/app_name" 
+                android:supportsRtl="true">
             <activity
                 android:name="com.jumio.bam.BamActivity"
                 android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
@@ -103,6 +109,6 @@
 			-dontwarn javax.annotation.Nullable
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
-        <framework src="src/android/jumio.gradle" custom="true" type="gradleReference" /> 
+        <framework src="src/android/jumio.gradle" custom="true" type="gradleReference" />  
     </platform>
 </plugin>
