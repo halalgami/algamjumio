@@ -1,0 +1,51 @@
+{
+  "_from": "git+https://github.com/Jumio/mobile-cordova.git#v3.3.1",
+  "_id": "cordova-plugin-jumio-mobilesdk@3.3.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-jumio-mobilesdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/Jumio/mobile-cordova.git#v3.3.1",
+    "rawSpec": "git+https://github.com/Jumio/mobile-cordova.git#v3.3.1",
+    "saveSpec": "git+https://github.com/Jumio/mobile-cordova.git#v3.3.1",
+    "fetchSpec": "https://github.com/Jumio/mobile-cordova.git",
+    "gitCommittish": "v3.3.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Jumio/mobile-cordova.git#b01f78c04ad57ae74698cc0f36e8dce6401a6de3",
+  "_spec": "git+https://github.com/Jumio/mobile-cordova.git#v3.3.1",
+  "_where": "/Users/halalgami/Downloads/mobile-cordova-master/demo",
+  "author": {
+    "name": "Jumio Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/Jumio/mobile-cordova/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-jumio-mobilesdk",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Jumio Mobile SDK Plugin for Cordova",
+  "homepage": "https://github.com/Jumio/mobile-cordova#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "name": "cordova-plugin-jumio-mobilesdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jumio/mobile-cordova.git"
+  },
+  "version": "3.3.1"
+}
