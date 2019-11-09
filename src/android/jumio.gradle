@@ -327,7 +327,7 @@ dependencies {
     //only for nv-barcode-vision
     implementation "com.google.android.gms:play-services-vision:18.0.0"//("com.google.android.gms:play-services-vision:18.0.0"){
 		//exclude group: 'com.android.support', module:'support-v4'
-	}
+	//}
 
 	//only for nv-nfc
 	implementation "org.bouncycastle:bcprov-jdk15on:1.61"
