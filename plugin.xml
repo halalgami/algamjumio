@@ -110,6 +110,6 @@
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
-        <framework src="src/android/gradle.properties" custom="true" />  
+        <!-- <framework src="src/android/gradle.properties" custom="true" />   -->
     </platform>
 </plugin>

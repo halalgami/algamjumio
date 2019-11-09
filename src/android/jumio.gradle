@@ -28,7 +28,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
@@ -101,7 +101,7 @@ ext {
     cdvPluginPostBuildExtras = []
 
     //for teh jumio
-    SDK_VERSION = "3.3.1"
+    SDK_VERSION = "3.3.2"
 }
 
 // PLUGIN GRADLE EXTENSIONS START
