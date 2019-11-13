@@ -51,6 +51,7 @@
         </config-file>
         <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
                 <application android:hardwareAccelerated="true" tools:replace="android:appComponentFactory" android:appComponentFactory="whateverString" android:icon="@mipmap/icon" android:label="@string/app_name" android:supportsRtl="true">
+                </application>
         </edit-config>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
