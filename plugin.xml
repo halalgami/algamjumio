@@ -49,8 +49,9 @@
             <uses-permission android:name="android.permission.VIBRATE"/>
             <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
         </config-file>
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-              <application tools:replace="android:appComponentFactory"/>
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+              <application tools:replace="android:appComponentFactory"
+                    android:appComponentFactory="whateverString"/>
         </edit-config>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
