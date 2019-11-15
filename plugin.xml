@@ -92,9 +92,9 @@
 			-dontwarn com.microblink.**
 			-dontwarn javax.annotation.Nullable
         </proguard-config>
-        <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
         <framework src="src/android/jumio.gradle" custom="true" type="gradleReference" />
-        <source-file src="src/android/gradle.properties" target-dir="/*" />
+        <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
+        <!-- <source-file src="src/android/gradle.properties" target-dir="/*" /> -->
         <!-- <framework src="src/android/gradle.properties" custom="true" /> -->
     </platform>
 </plugin>
