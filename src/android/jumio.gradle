@@ -189,7 +189,6 @@ def computeBuildTargetName(debugBuild) {
 // }
 
 android {
-defaultBuildToolsVersion 28
     defaultConfig {
         multiDexEnabled true
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
